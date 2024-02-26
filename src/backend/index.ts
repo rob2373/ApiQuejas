@@ -1,6 +1,5 @@
 import { Server } from 'azle';
 import express, { NextFunction, Request, Response } from 'express';
-/* import {Queja} from './registro' */
 export type Queja={
     id: number,
     fecha: Date,
@@ -53,7 +52,7 @@ export default Server(() => {
      
     });
 
-
+    //UPTADE
     app.put('/queja/:id', (req, res) => {
         const id = parseInt(req.params.id);
         const Queja = quejas.find((Queja) => Queja.id === id);
